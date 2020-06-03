@@ -4,7 +4,8 @@
 
 //Error occured: Java compiler error “class, interface, or enum expected” 
 //Answer: references from: https://www.baeldung.com/java-class-interface-enum-expected.
-
+//Note: Because these classes are being written in the same file, you must not use an access modifier (e.g.:public) 
+        when declaring MyBook or your code will not execute.
 import java.util.*;
 
 abstract class Book {
