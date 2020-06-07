@@ -8,14 +8,19 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-       String string = in.next();
+        String string = in.next();
         in.close();
         try {
-            Integer integer = Integer.parseInt(string);
-            System.out.println(integer);
-        } catch (NumberFormatException numberFormatException) {
+            int number = Integer.parseInt(string);
+            System.out.println(number);
+        } catch (Exception e) {
+        //It is a method of Java's throwable class which prints the throwable along with other details like the line number and class name where the exception occurred. ... 
+        //For example, if one out of five methods in your code cause an exception, printStackTrace()
+        //will pinpoint the exact line in which the method raised the exception.
+            e.printStackTrace();
             System.out.println("Bad String");
         }
 
     }
 }
+
